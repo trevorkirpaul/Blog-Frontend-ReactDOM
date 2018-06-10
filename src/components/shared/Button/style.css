@@ -1,0 +1,32 @@
+.ghostButtonContainer {
+  background-color: #f8f8f8;
+  border: 2px solid #383838;
+  border-radius: 25px;
+  color: #383838;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 5px;
+}
+
+.buttonContainer {
+  background-color: #383838;
+  border: 2px solid #383838;
+  border-radius: 25px;
+  color: #f8f8f8;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 5px;
+}
+
+.dangerButtonContainer {
+  background-color: #f8f8f8;
+  border: 2px solid #f44336;
+  border-radius: 25px;
+  color: #383838;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 5px;
+}
