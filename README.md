@@ -19,3 +19,19 @@ export default {
   API: null // URI for Node Backend
 };
 ```
+
+## Reusable Components
+
+### **Button**
+
+props:
+
+- `label`
+  - Button label/text
+- `onClick`
+  - fxn invoked on click
+- `type`
+  - type of button in regards to stying. Can be:
+    - null
+    - ghost
+    - danger

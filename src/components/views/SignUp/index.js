@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from 'components/shared/Button';
 
 class SignUp extends Component {
   constructor(props) {
@@ -59,7 +60,9 @@ class SignUp extends Component {
           onChange={this.handleOnChange}
           placeholder="confirm password"
         />
-        <button onClick={this.handleCreateUser}>Create</button>
+        <div>
+          <Button label="Create" onClick={this.handleCreateUser} />
+        </div>
       </div>
     );
   }
