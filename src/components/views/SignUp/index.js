@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Button from 'components/shared/Button';
-import TextField from 'components/shared/TextField';
 import TitlePanel from 'components/shared/TitlePanel';
 import Form from 'components/shared/Form';
 
