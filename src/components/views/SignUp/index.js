@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from 'components/shared/Button';
+import TextField from 'components/shared/TextField';
 
 class SignUp extends Component {
   constructor(props) {
@@ -39,26 +40,29 @@ class SignUp extends Component {
       <div>
         <h2>Sign Up</h2>
         {error && <p className="errorText">{error}</p>}
-        <input
+        <TextField
           type="email"
           name="email"
           value={email}
           onChange={this.handleOnChange}
           placeholder="email"
+          error={!email && this.state.error}
         />
-        <input
+        <TextField
           type="password"
           name="password"
           value={password}
           onChange={this.handleOnChange}
           placeholder="password"
+          error={error}
         />
-        <input
+        <TextField
           type="password"
           name="confirmPassword"
           value={confirmPassword}
           onChange={this.handleOnChange}
           placeholder="confirm password"
+          error={this.state.error}
         />
         <div>
           <Button label="Create" onClick={this.handleCreateUser} />
