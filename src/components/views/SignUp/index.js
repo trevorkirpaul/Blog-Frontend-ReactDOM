@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Button from 'components/shared/Button';
 import TextField from 'components/shared/TextField';
+import TitlePanel from 'components/shared/TitlePanel';
 
 class SignUp extends Component {
   constructor(props) {
@@ -38,7 +39,7 @@ class SignUp extends Component {
     const { email, password, confirmPassword, error } = this.state;
     return (
       <div>
-        <h2>Sign Up</h2>
+        <TitlePanel title="Sign Up" subtitle="Create An Account" />
         {error && <p className="errorText">{error}</p>}
         <TextField
           type="email"
