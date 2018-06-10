@@ -29,9 +29,35 @@ props:
 - `label`
   - Button label/text
 - `onClick`
-  - fxn invoked on click
+  - fxn invoked onClick
 - `type`
   - type of button in regards to stying. Can be:
     - null
     - ghost
     - danger
+
+## **TextField**
+
+props:
+
+- `type`
+- `name`
+- `placeholder`
+- `value`
+- `onChange`
+  - fxn invoked onChange
+- `error`
+  - bool that renders error styling
+
+### **TitlePanel**
+
+props:
+
+- `title`
+  - h1 header
+- `subtitle`
+  - h2 header
+- `message`
+  - paragraph element
+
+> if h2 or p are null, those elements and their containers don't render
