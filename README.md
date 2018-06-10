@@ -61,3 +61,41 @@ props:
   - paragraph element
 
 > if h2 or p are null, those elements and their containers don't render
+
+### **Form**
+
+props:
+
+- `fields`
+  - an array of objects used to render `TextFields`
+
+The `fields` array should look like this:
+
+```javascript
+const fields = [
+  {
+    type: "email",
+    name: "email",
+    value: email,
+    onChange: this.handleOnChange,
+    placeholder: "email",
+    error
+  },
+  {
+    type: "password",
+    name: "password",
+    value: password,
+    onChange: this.handleOnChange,
+    placeholder: "password",
+    error
+  },
+  {
+    type: "password",
+    name: "confirmPassword",
+    value: confirmPassword,
+    onChange: this.handleOnChange,
+    placeholder: "confirmPassword",
+    error
+  }
+];
+```
