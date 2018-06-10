@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from 'components/shared/Button';
-import TextField from 'components/shared/TextField';
 import TitlePanel from 'components/shared/TitlePanel';
+import Form from 'components/shared/Form';
 
 class SignUp extends Component {
   constructor(props) {
@@ -37,34 +37,37 @@ class SignUp extends Component {
 
   render() {
     const { email, password, confirmPassword, error } = this.state;
+    const fields = [
+      {
+        type: 'email',
+        name: 'email',
+        value: email,
+        onChange: this.handleOnChange,
+        placeholder: 'email',
+        error,
+      },
+      {
+        type: 'password',
+        name: 'password',
+        value: password,
+        onChange: this.handleOnChange,
+        placeholder: 'password',
+        error,
+      },
+      {
+        type: 'password',
+        name: 'confirmPassword',
+        value: confirmPassword,
+        onChange: this.handleOnChange,
+        placeholder: 'confirmPassword',
+        error,
+      },
+    ];
     return (
       <div>
         <TitlePanel title="Sign Up" subtitle="Create An Account" />
         {error && <p className="errorText">{error}</p>}
-        <TextField
-          type="email"
-          name="email"
-          value={email}
-          onChange={this.handleOnChange}
-          placeholder="email"
-          error={!email && this.state.error}
-        />
-        <TextField
-          type="password"
-          name="password"
-          value={password}
-          onChange={this.handleOnChange}
-          placeholder="password"
-          error={error}
-        />
-        <TextField
-          type="password"
-          name="confirmPassword"
-          value={confirmPassword}
-          onChange={this.handleOnChange}
-          placeholder="confirm password"
-          error={this.state.error}
-        />
+        <Form fields={fields} />
         <div>
           <Button label="Create" onClick={this.handleCreateUser} />
         </div>
