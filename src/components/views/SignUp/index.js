@@ -12,12 +12,14 @@ class SignUp extends Component {
     this.handleOnChange = this.handleOnChange.bind(this);
     this.handleCreateUser = this.handleCreateUser.bind(this);
   }
+
   handleOnChange(e) {
     const {
       target: { name, value },
     } = e;
     this.setState({ [name]: value });
   }
+
   handleCreateUser() {
     const { email, password, confirmPassword } = this.state;
     if (!email || !password) {
@@ -29,6 +31,7 @@ class SignUp extends Component {
     this.setState({ error: null });
     return console.log({ email, password });
   }
+
   render() {
     const { email, password, confirmPassword, error } = this.state;
     return (
