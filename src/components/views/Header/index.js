@@ -8,6 +8,7 @@ const isAuth = false;
 
 // if user is not authenticated, we'll pass these in to create links
 const authFalse = [
+  { url: '/stories', text: 'Stories', key: uuid() },
   { url: '/sign-up', text: 'Sign Up', key: uuid() },
   { url: '/sign-in', text: 'Sign In', key: uuid() },
 ];
