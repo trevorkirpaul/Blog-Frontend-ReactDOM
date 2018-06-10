@@ -11,11 +11,11 @@ All work must be done in a separate branch, using pull requests to merge code in
 
 ## Env Setup
 
-A `config.js` file will be needed in the future, as we start making API calls. This file will contain credentials such as the API URL. It will never contain passwords as all authentication will be done via JWT.
+A `config.js` file is now necessary to run this app.
 
 ```javascript
-// src/config.js
+// src/utils/config.js
 export default {
-  API: null, // URI for Node Backend
+  API: null // URI for Node Backend
 };
 ```
