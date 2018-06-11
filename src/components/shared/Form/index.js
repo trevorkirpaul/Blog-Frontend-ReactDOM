@@ -7,6 +7,7 @@ const Form = ({ fields }) => {
     <div className="formContainer">
       {fields.map(field => (
         <TextField
+          key={field.id}
           type={field.type}
           name={field.name}
           value={field.value}

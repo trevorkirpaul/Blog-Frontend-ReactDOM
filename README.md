@@ -79,7 +79,8 @@ const fields = [
     value: email,
     onChange: this.handleOnChange,
     placeholder: "email",
-    error
+    error,
+    id: "someid0"
   },
   {
     type: "password",
@@ -87,7 +88,8 @@ const fields = [
     value: password,
     onChange: this.handleOnChange,
     placeholder: "password",
-    error
+    error,
+    id: "someid1"
   },
   {
     type: "password",
@@ -95,7 +97,8 @@ const fields = [
     value: confirmPassword,
     onChange: this.handleOnChange,
     placeholder: "confirmPassword",
-    error
+    error,
+    id: "someid2"
   }
 ];
 ```
