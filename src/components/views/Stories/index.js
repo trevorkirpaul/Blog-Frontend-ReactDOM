@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchAllStories } from '@redux/actions/Stories';
+import TitlePanel from 'components/shared/TitlePanel';
+import StoriesList from './StoriesList';
 
 /*
   This component is connected to the redux store
@@ -25,7 +27,8 @@ class Stories extends Component {
   render() {
     return (
       <div>
-        <p>Stories</p>
+        <TitlePanel title="Stories" subtitle="All Stories" />
+        <StoriesList stories={this.props.Stories.all} />
       </div>
     );
   }
