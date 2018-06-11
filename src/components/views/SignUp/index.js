@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Button from 'components/shared/Button';
 import TitlePanel from 'components/shared/TitlePanel';
 import Form from 'components/shared/Form';
+import uuid from 'uuid';
 
 class SignUp extends Component {
   constructor(props) {
@@ -45,6 +46,7 @@ class SignUp extends Component {
         onChange: this.handleOnChange,
         placeholder: 'email',
         error,
+        id: uuid(),
       },
       {
         type: 'password',
@@ -53,6 +55,7 @@ class SignUp extends Component {
         onChange: this.handleOnChange,
         placeholder: 'password',
         error,
+        id: uuid(),
       },
       {
         type: 'password',
@@ -61,6 +64,7 @@ class SignUp extends Component {
         onChange: this.handleOnChange,
         placeholder: 'confirmPassword',
         error,
+        id: uuid(),
       },
     ];
     return (
