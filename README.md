@@ -1,5 +1,7 @@
 # Blog - React DOM Frontend
 
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
+
 This app is part of a project where we showcase the experience from building a DOM based React app with the intention of injecting it into a React Native app via a Web View.
 
 This app will be connected to a backend:
